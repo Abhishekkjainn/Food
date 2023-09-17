@@ -1,0 +1,218 @@
+*{
+    font-family: 'Montserrat';
+    margin: 0;padding: 0;
+}
+body html{
+    overflow-x: hidden;
+    background-color: black;
+    background-image: url("Desktop\ -\ 1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    overflow-x: hidden;
+    z-index: 100;
+}
+header nav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logoandname{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.companynameheader{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-left: 20px;
+    color: white;
+
+}
+.buttonsheader{
+    width: 55%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.buttonprimary{
+    width: 150px;
+    height: 50px;
+    border: 3px solid transparent;
+    border-radius: 40px;
+    background-color: rgba(97, 122, 85, 1);
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+    margin-right: 20px;
+}
+.buttonprimary:hover{
+    font-size: 0.9rem;
+    transition: 0.2s;
+    border-radius: 30px;
+    background-color:rgb(78, 106, 65) ;
+}
+.buttonsec{
+    width: 150px;
+    height: 50px;
+    border: 3px solid rgba(97, 122, 85, 1);
+    border-radius: 40px;
+    background-color: transparent;
+    font-size: 1rem;
+    font-weight: 700;
+    color: rgb(78, 106, 65);
+    margin-right: 20px;
+}
+
+
+/*page1*/
+.page1{
+    height: 100vh;
+    width: 100vw;
+    margin: 0;padding: 0;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.mainvid{
+    background-color: black;
+    width: 100vw;
+    margin: 0;padding: 0;
+    overflow-x: hidden;
+    position: fixed;
+    z-index: -1;
+}
+/*page1*/
+.page1maintext{
+    font-size: 130px;
+    font-weight: 900;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+.underhead{
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    margin: 0;padding: 0;
+    transform: translateY(100%);
+}
+.desc{
+    width: 60%;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    transform: translateY(150%);
+}
+/*page2*/
+.page2{
+    height: 200vh;
+    width: 100vw;
+    background-image: url("Desktop\ -\ 1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: backgroundanim 1s linear;
+}
+@keyframes backgroundanim {
+    0%{
+        background-image: url("Desktop\ -\ 1.png");
+        opacity: 0;
+        background-position: -80px;
+        border: none;
+    }
+    100%{
+        background-image: url("Desktop\ -\ 1.png");
+        background-position: center;
+        opacity: 1;
+        border: none;
+    }
+
+}
+.marquee {
+    position: relative;
+    width: 100vw;
+    max-width: 100%;
+    height: 200px;
+    overflow-x: hidden;
+    font-size: 80px;
+    font-weight: 1000;
+}
+.marqueetext:hover{
+    color: rgba(97, 122, 85, 1);
+    transition: 0.2s;
+}
+  
+.track {
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee 15s linear infinite;
+}
+  
+@keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+  
+.aboutussection{
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page2image{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page2content{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.page2imageimg{
+    width: 80%;
+}
+.headerpage2{
+    font-size: 40px;
+    font-weight: 600;
+}
+.contentpg2text{
+    font-size: 1.3rem;
+    font-weight: 700;
+    width: 90%;
+    text-align: justify;
+    margin-top: 10%;
+}
+.buttonpage2div{
+    margin-top: 5%;
+}
+
+
+@media screen and (max-width : 800px){
+    .mainvid{
+        display: none;
+    }
+}
